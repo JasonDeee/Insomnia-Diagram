@@ -146,7 +146,7 @@ nav {
       line-height: 1rem;
       position: absolute;
       bottom: -5vh;
-      right: 6vw;
+      right: 10vw;
     }
     strong {
       font-weight: 900;
@@ -277,7 +277,15 @@ nav {
     filter: blur(13vw);
   }
 }
+.lazy_pic {
+  background-image: url(../Vectors/Lazy.svg);
+  width: 10vw;
+  height: 5vw;
+  background-repeat: no-repeat;
+  background-position: center;
 
+  margin-bottom: 5vh;
+}
 .first_line {
   width: 32%;
   height: 50vh;
@@ -678,8 +686,73 @@ nav {
 }
 
 #section4 {
-  background: blueviolet;
+  background: radial-gradient(circle at 100% 80%, #e9eef8 0%, #01144e 99%);
 }
 #section5 {
-  background: hotpink;
+  background: radial-gradient(circle at 100% 20%, #e9eef8 0%, #01144e 99%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: #e9eef8;
+
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  padding-left: 7vw;
+  padding-right: 5vw;
+  gap: 5vh;
+
+  h1 {
+    width: 100%;
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+  }
+}
+.tips {
+  width: 100%;
+  height: 30vh;
+  background: #d6e1ec;
+  border-radius: 1.5vw;
+  box-shadow: 1vw 1vw 3vw #00000050;
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  .tips_contents {
+    height: 100%;
+    flex: auto;
+  }
+
+  .tips_illus {
+    height: 100%;
+    width: 38%;
+    background: cadetblue;
+
+    position: relative;
+  }
+  .tips_illus::after {
+    content: "";
+    background: linear-gradient(to right, #d6e1ec, #d6e1ec00);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+  }
+}
+
+.tips:hover {
+  height: 45vh;
+}
+
+#section6 {
+  background: radial-gradient(circle at 100% 80%, #e9eef8 0%, #01144e 99%);
 }
