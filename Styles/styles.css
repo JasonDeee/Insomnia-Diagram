@@ -30,6 +30,42 @@ body {
   background: #151515;
   -webkit-transition: all 0.8s 0.2s cubic-bezier(0.25, 0, 0, 1);
   transition: all 0.8s 0.2s cubic-bezier(0.25, 0, 0, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone {
+  background: #d6e1ec;
+  color: #01144e;
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 30px;
+  text-align: center;
+  position: fixed;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 20px #00000050;
+          box-shadow: 10px 10px 20px #00000050;
+  width: 90vw;
+  height: 90vh;
+  z-index: 99;
+  margin-top: 5vh;
 }
 
 nav {
@@ -891,6 +927,27 @@ nav {
 
 #section4 {
   background: radial-gradient(circle at 100% 80%, #e9eef8 0%, #01144e 99%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section4 h2 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e9eef8), to(#ffffff));
+  background: linear-gradient(to right, #e9eef8 50%, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 #section5 {
@@ -910,7 +967,7 @@ nav {
           justify-content: space-between;
   position: relative;
   color: #e9eef8;
-  padding-top: 5vh;
+  padding-top: 7vh;
   padding-bottom: 10vh;
   padding-left: 7vw;
   padding-right: 5vw;
@@ -921,6 +978,7 @@ nav {
   width: 100%;
   font-size: 2.6rem;
   line-height: 2.5rem;
+  font-weight: 900;
 }
 
 .tips {
@@ -954,6 +1012,33 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  padding-left: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #01144e;
+}
+
+.tips .tips_contents h2 {
+  font-weight: 900;
+  margin-bottom: 1vh;
+}
+
+.tips .tips_contents ul {
+  width: 95%;
 }
 
 .tips .tips_illus {
@@ -980,5 +1065,164 @@ nav {
 
 #section6 {
   background: radial-gradient(circle at 100% 80%, #e9eef8 0%, #01144e 99%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-left: 14vw;
+  padding-right: 5vw;
+}
+
+.cat_watching {
+  background-color: white;
+  background-image: url(../Images/tenor.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  border-radius: 50%;
+  width: 38%;
+  aspect-ratio: 1;
+  margin-right: 8vw;
+}
+
+.say_goodbye {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  height: 100%;
+  color: #e9eef8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.say_goodbye #line {
+  width: 5vw;
+  height: 3px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.say_goodbye .thanks {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 11vh;
+}
+
+.say_goodbye .thanks h1 {
+  font-size: 5.4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-left: -5px;
+}
+
+.say_goodbye form {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2vh;
+  margin-top: 5vh;
+  position: relative;
+}
+
+.say_goodbye form h3 {
+  font-size: 0.72rem;
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+
+.say_goodbye form input,
+.say_goodbye form textarea {
+  width: 360px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #d6e1ec;
+  color: #01144e;
+  padding-left: 10px;
+  padding-right: 3px;
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+}
+
+.say_goodbye form textarea {
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.say_goodbye form button {
+  width: 90px;
+  height: 30px;
+  background: #d6e1ec;
+  outline: none;
+  color: #01144e;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  position: relative;
+  margin-left: 360px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.say_goodbye form button:hover {
+  background: #01144e;
+  color: #d6e1ec;
+}
+
+.say_goodbye form input:focus,
+.say_goodbye form textarea:focus,
+.say_goodbye form input:valid,
+.say_goodbye form textarea:valid {
+  background: #abd0f1;
 }
 /*# sourceMappingURL=styles.css.map */

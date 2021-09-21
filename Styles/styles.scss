@@ -27,6 +27,33 @@ body {
   overflow: hidden;
   background: #151515;
   transition: all 0.8s 0.2s cubic-bezier(0.25, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.phone {
+  background: #d6e1ec;
+  color: #01144e;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 30px;
+  text-align: center;
+
+  position: fixed;
+  align-self: center;
+  justify-self: center;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #00000050;
+  width: 90vw;
+  height: 90vh;
+  z-index: 99;
+  margin-top: 5vh;
 }
 
 nav {
@@ -687,6 +714,21 @@ nav {
 
 #section4 {
   background: radial-gradient(circle at 100% 80%, #e9eef8 0%, #01144e 99%);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    background: linear-gradient(to right, #e9eef8 50%, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+  }
 }
 #section5 {
   background: radial-gradient(circle at 100% 20%, #e9eef8 0%, #01144e 99%);
@@ -698,7 +740,7 @@ nav {
   position: relative;
   color: #e9eef8;
 
-  padding-top: 5vh;
+  padding-top: 7vh;
   padding-bottom: 10vh;
   padding-left: 7vw;
   padding-right: 5vw;
@@ -708,6 +750,7 @@ nav {
     width: 100%;
     font-size: 2.6rem;
     line-height: 2.5rem;
+    font-weight: 900;
   }
 }
 .tips {
@@ -728,6 +771,25 @@ nav {
   .tips_contents {
     height: 100%;
     flex: auto;
+    padding-left: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: #01144e;
+
+    h2 {
+      font-weight: 900;
+      margin-bottom: 1vh;
+    }
+    ul {
+      width: 95%;
+    }
   }
 
   .tips_illus {
@@ -755,4 +817,133 @@ nav {
 
 #section6 {
   background: radial-gradient(circle at 100% 80%, #e9eef8 0%, #01144e 99%);
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  padding-left: 14vw;
+  padding-right: 5vw;
+}
+
+.cat_watching {
+  background-color: white;
+  background-image: url(../Images/tenor.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+
+  border-radius: 50%;
+
+  width: 38%;
+  aspect-ratio: 1;
+
+  margin-right: 8vw;
+}
+
+.say_goodbye {
+  flex: auto;
+  height: 100%;
+
+  color: #e9eef8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  #line {
+    width: 5vw;
+    height: 3px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .thanks {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 11vh;
+    h1 {
+      font-size: 5.4rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-left: -5px;
+    }
+  }
+
+  form {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2vh;
+
+    margin-top: 5vh;
+    position: relative;
+
+    h3 {
+      font-size: 0.72rem;
+      font-weight: 400;
+      margin-bottom: 1vh;
+    }
+
+    input,
+    textarea {
+      width: 360px;
+      height: 36px;
+
+      border-radius: 8px;
+
+      border: none;
+      outline: none;
+      background: #d6e1ec;
+
+      color: #01144e;
+
+      padding-left: 10px;
+      padding-right: 3px;
+
+      transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+    }
+    textarea {
+      height: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    button {
+      width: 90px;
+      height: 30px;
+      background: #d6e1ec;
+      outline: none;
+      color: #01144e;
+      border: none;
+      border-radius: 8px;
+      transition: all 0.3s ease-out;
+      cursor: pointer;
+
+      position: relative;
+
+      margin-left: 360px;
+      transform: translateX(-100%);
+    }
+    button:hover {
+      background: #01144e;
+      color: #d6e1ec;
+    }
+    input:focus,
+    textarea:focus,
+    input:valid,
+    textarea:valid {
+      background: #abd0f1;
+    }
+  }
 }
