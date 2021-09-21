@@ -14,7 +14,19 @@
     <!-- Social Image -->
     <img src="./Images/Social.jpg" alt="" style="display: none" />
     <!-- Social Image -->
+    <div class="phone">Đừng dùng Điện thoại chứ :)</div>
+    <script>
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        /* your code here */
+        phonePop();
+      }
 
+      function phonePop() {
+        let PopUp = document.querySelector(".phone");
+        PopUp.style.display = `flex`;
+      }
+    </script>
     <nav>
       <div id="NAV-dots"></div>
     </nav>
@@ -753,7 +765,7 @@
         </div>
       </section>
       <section class="section" id="section3">
-        <h4 id="units">Unit: Hour(s) per Day</h4>
+        <h4 id="units">Average Bed-time - Hour(s) per Day</h4>
         <div class="member" id="m1">
           <div class="member_avt"><h1>T</h1></div>
           <div class="member_status">
@@ -769,8 +781,8 @@
                 <div class="column" id="after">+30 Mins</div>
               </div>
               <div class="column_holder">
-                <h3>7:30</h3>
-                <h3>8:00</h3>
+                <h3>7.5</h3>
+                <h3>8.0</h3>
               </div>
             </div>
           </div>
@@ -793,7 +805,7 @@
               </div>
               <div class="column_holder">
                 <h3>N/A</h3>
-                <h3>8:30</h3>
+                <h3>8.5</h3>
               </div>
             </div>
           </div>
@@ -809,11 +821,11 @@
             <div class="number">
               <div class="column_holder" id="graph">
                 <div class="column" id="before"></div>
-                <div class="column" id="after">+2 Hour</div>
+                <div class="column" id="after">+2 Hours</div>
               </div>
               <div class="column_holder">
-                <h3>6:30</h3>
-                <h3>8:30</h3>
+                <h3>6.5</h3>
+                <h3>8.5</h3>
               </div>
             </div>
           </div>
@@ -831,11 +843,11 @@
             <div class="number">
               <div class="column_holder" id="graph">
                 <div class="column" id="before"></div>
-                <div class="column" id="after">+1.5 Hour</div>
+                <div class="column" id="after">+1.5 Hours</div>
               </div>
               <div class="column_holder">
-                <h3>6:30</h3>
-                <h3>8:00</h3>
+                <h3>6.5</h3>
+                <h3>8.0</h3>
               </div>
             </div>
           </div>
@@ -854,30 +866,93 @@
             <div class="number">
               <div class="column_holder" id="graph">
                 <div class="column" id="before"></div>
-                <div class="column" id="after">+1.5 Hour</div>
+                <div class="column" id="after">+1.5 Hours</div>
               </div>
               <div class="column_holder">
-                <h3>8:00</h3>
-                <h3>9:30</h3>
+                <h3>8.0</h3>
+                <h3>9.5</h3>
               </div>
             </div>
           </div>
           <div class="member_avt" id="avt2"></div>
         </div>
       </section>
-      <section class="section" id="section4"></section>
+      <section class="section" id="section4">
+        <h2>Những giấc ngủ như vậy<br />Có thật sự khoa học?</h2>
+      </section>
       <section class="section" id="section5">
         <h1 class="Fundamentals">Ở đây có Tips:</h1>
         <div class="tips" id="toDo">
-          <div class="tips_contents"></div>
+          <div class="tips_contents">
+            <h2>Làm gì?</h2>
+            <ul>
+              <li>
+                A song can make or ruin a person’s day if they let it get to
+                them.
+              </li>
+              <li>
+                As he waited for the shower to warm, he noticed that he could
+                hear water change temperature.
+              </li>
+              <li>
+                Swim at your own risk was taken as a challenge for the group of
+                Kansas City college students.
+              </li>
+            </ul>
+          </div>
           <div class="tips_illus"></div>
         </div>
         <div class="tips" id="toAvoid">
-          <div class="tips_contents"></div>
+          <div class="tips_contents">
+            <h2>Tránh gì?</h2>
+            <ul>
+              <li>
+                She wasn't sure whether to be impressed or concerned that he
+                folded underwear in neat little packages.
+              </li>
+              <li>
+                I thought red would have felt warmer in summer but I didn't
+                think about the equator.
+              </li>
+              <li>He had a vague sense that trees gave birth to dinosaurs.</li>
+            </ul>
+          </div>
           <div class="tips_illus"></div>
         </div>
       </section>
-      <section class="section" id="section6"></section>
+      <section class="section" id="section6">
+        <div class="cat_watching"></div>
+        <div class="say_goodbye">
+          <div class="thanks">
+            <h1>GRAZIE!</h1>
+            <p>
+              Cuối cùng thì Giãn cách cũng đâu đến nỗi tệ,<br />Cứ có giấc ngủ
+              tốt đã!
+            </p>
+          </div>
+          <div id="line"></div>
+          <form action="">
+            <h3>Còn bạn. Giấc ngủ thời Covid của bạn thế nào?</h3>
+            <input
+              type="text"
+              autocomplete="off"
+              spellcheck="false"
+              style="resize: none"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name=""
+              autocomplete="off"
+              spellcheck="false"
+              style="resize: none"
+              placeholder="Messages"
+              required
+            ></textarea>
+            <button>SUBMIT</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
   <script src="./app.js"></script>
