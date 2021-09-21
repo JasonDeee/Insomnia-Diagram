@@ -279,7 +279,7 @@ nav {
 }
 
 .first_line {
-  width: 25%;
+  width: 32%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -298,6 +298,9 @@ nav {
     margin-top: 3vh;
     font-weight: 400;
   }
+  br {
+    height: 2vh;
+  }
 }
 
 #section3 {
@@ -308,6 +311,14 @@ nav {
   align-items: center;
   justify-content: space-around;
   gap: 2vw;
+  position: relative;
+  h4 {
+    position: absolute;
+    bottom: 2vh;
+    font-size: 0.8rem;
+    color: #d6e1ec;
+    font-weight: 400;
+  }
 }
 .member {
   height: 80vh;
@@ -485,13 +496,14 @@ nav {
   font-size: 0.9rem;
   font-weight: 600;
   opacity: 100%;
+  pointer-events: none;
+
   transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
 }
 
 #des2 {
   font-size: 1rem;
   font-weight: 600;
-  pointer-events: none;
   position: absolute;
   width: 140%;
   height: auto;

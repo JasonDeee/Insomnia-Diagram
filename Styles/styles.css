@@ -365,7 +365,7 @@ nav {
 }
 
 .first_line {
-  width: 25%;
+  width: 32%;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,6 +395,10 @@ nav {
   font-weight: 400;
 }
 
+.first_line br {
+  height: 2vh;
+}
+
 #section3 {
   background: radial-gradient(circle at 100% 20%, #e9eef8 0%, #01144e 99%);
   -webkit-box-orient: horizontal;
@@ -409,6 +413,15 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 2vw;
+  position: relative;
+}
+
+#section3 h4 {
+  position: absolute;
+  bottom: 2vh;
+  font-size: 0.8rem;
+  color: #d6e1ec;
+  font-weight: 400;
 }
 
 .member {
@@ -665,6 +678,7 @@ nav {
   font-size: 0.9rem;
   font-weight: 600;
   opacity: 100%;
+  pointer-events: none;
   -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
   transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
 }
@@ -672,7 +686,6 @@ nav {
 #des2 {
   font-size: 1rem;
   font-weight: 600;
-  pointer-events: none;
   position: absolute;
   width: 140%;
   height: auto;
