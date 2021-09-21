@@ -17,10 +17,18 @@ sec1.addEventListener("mousemove", sec1_react);
 function sec1_react(e) {
   // Play It!
 
-  BG.style.transform = `translateX(${e.pageX / 15}px)`;
-  cv_bubble.style.transform = `translateX(${-e.pageX / 15}px)`;
-  bubble2.style.transform = `translateX(${-e.pageX / 80}px)`;
-  bubble1.style.transform = `translateX(${e.pageX / 80}px)`;
+  BG.style.transform = `translateX(${
+    (e.pageX - window.innerWidth / 2) / 15
+  }px)`;
+  cv_bubble.style.transform = `translateX(${
+    -(e.pageX - window.innerWidth / 2) / 15
+  }px)`;
+  bubble2.style.transform = `translateX(${
+    -(e.pageX - window.innerWidth / 2) / 80
+  }px)`;
+  bubble1.style.transform = `translateX(${
+    (e.pageX - window.innerWidth / 2) / 80
+  }px)`;
 }
 
 // section2 - First Line
