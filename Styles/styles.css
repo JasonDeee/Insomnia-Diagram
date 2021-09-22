@@ -236,12 +236,13 @@ nav {
 }
 
 .title_box h1 span {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 0.9rem;
   line-height: 1rem;
   position: absolute;
   bottom: -5vh;
   right: 10vw;
+  letter-spacing: 0.1vw;
 }
 
 .title_box h1 strong {
@@ -410,8 +411,8 @@ nav {
 }
 
 .first_line {
-  width: 32%;
-  height: 50vh;
+  width: 38%;
+  height: 62vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,22 +427,31 @@ nav {
       -ms-flex-pack: start;
           justify-content: start;
   text-align: center;
-  color: #e9e7e7;
+  color: white;
   z-index: 2;
 }
 
 .first_line h1 {
   font-weight: 900;
   font-size: 2rem;
+  color: #e9eef8;
 }
 
 .first_line p {
   margin-top: 3vh;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.first_line br {
-  height: 2vh;
+.first_line span {
+  height: auto;
+  margin-bottom: 12px;
 }
 
 #section3 {
@@ -713,9 +723,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
@@ -845,7 +855,7 @@ nav {
 }
 
 #m3 #after {
-  height: 85%;
+  height: 60%;
   background: #cc614a;
 }
 
@@ -915,6 +925,7 @@ nav {
 #m5 #after {
   height: 95%;
   background: #f09100;
+  color: white;
 }
 
 .member:hover #m1 .member_avt,
@@ -937,6 +948,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10vh;
 }
 
 #section4 h2 {
@@ -948,6 +960,24 @@ nav {
   font-size: 2.2rem;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 5vh;
+}
+
+#section4 p {
+  color: white;
+  width: 38%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section4 span {
+  margin-bottom: 12px;
 }
 
 #section5 {
@@ -979,6 +1009,21 @@ nav {
   font-size: 2.6rem;
   line-height: 2.5rem;
   font-weight: 900;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section5 span {
+  font-size: 0.9rem;
+  font-weight: 300;
+  position: absolute;
+  bottom: 2vh;
+}
+
+#section5 a {
+  color: #e9eef8;
 }
 
 .tips {
@@ -1009,11 +1054,9 @@ nav {
 
 .tips .tips_contents {
   height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  width: 62%;
   padding-left: 4vw;
-  padding-top: 2vh;
+  padding-top: 1vh;
   padding-bottom: 2vh;
   position: relative;
   display: -webkit-box;
@@ -1029,6 +1072,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
   color: #01144e;
 }
 
@@ -1038,7 +1082,13 @@ nav {
 }
 
 .tips .tips_contents ul {
-  width: 95%;
+  width: 113%;
+}
+
+.tips .tips_contents li {
+  margin-bottom: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
 }
 
 .tips .tips_illus {
@@ -1059,8 +1109,28 @@ nav {
   height: 100%;
 }
 
+#toDo .tips_illus {
+  background-image: url(../Vectors/do.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 50%;
+  background-color: #b6e6fc;
+}
+
+#toAvoid .tips_illus {
+  background-image: url(../Vectors/avoid.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+  background-color: #bf614c;
+}
+
 .tips:hover {
   height: 45vh;
+}
+
+.tips:hover li {
+  margin-bottom: 1.5vh;
 }
 
 #section6 {
@@ -1222,7 +1292,9 @@ nav {
 .say_goodbye form input:focus,
 .say_goodbye form textarea:focus,
 .say_goodbye form input:valid,
-.say_goodbye form textarea:valid {
+.say_goodbye form textarea:valid,
+.say_goodbye form input:hover,
+.say_goodbye form textarea:hover {
   background: #abd0f1;
 }
 /*# sourceMappingURL=styles.css.map */
