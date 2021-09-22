@@ -244,6 +244,28 @@ nav {
     aspect-ratio: 1;
     border-radius: 50%;
   }
+  .top_row {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4vw;
+  }
+  .conlumn {
+    width: 16vw;
+    height: 42vh;
+    background: #d6e1ec;
+    border-radius: 1.5vw;
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #01144e;
+  }
 }
 
 #front {
@@ -311,12 +333,18 @@ nav {
   height: 5vw;
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  margin-bottom: 5vh;
+.people_pic {
+  background-image: url(../Vectors/3people.svg);
+  width: 15vw;
+  height: 10vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .first_line {
   width: 38%;
-  height: 62vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -782,14 +810,14 @@ nav {
     display: flex;
   }
   span {
-    font-size: 0.9rem;
-    font-weight: 300;
-
     position: absolute;
     bottom: 2vh;
+    font-size: 0.8rem;
+    color: #d6e1ec;
+    font-weight: 400;
   }
   a {
-    color: #e9eef8;
+    color: #d6e1ec;
   }
 }
 .tips {
