@@ -54,6 +54,37 @@ document.addEventListener("wheel", (e) => {
   Report();
 });
 
+window.addEventListener("keydown", (e) => {
+  const key = e.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+  console.log(key);
+
+  switch (e.key) {
+    case "ArrowUp":
+      // Up pressed
+      scrollUp();
+      break;
+
+    case "ArrowDown":
+      // Down pressed
+      scrollDown();
+      break;
+
+    case "PageUp":
+      // Up pressed
+      scrollUp();
+      break;
+
+    case "PageDown":
+      // Down pressed
+      scrollDown();
+      break;
+    case " ":
+      // Down pressed
+      scrollDown();
+      break;
+  }
+});
+
 // 'Magic' Function
 var scrollCount = 0;
 
