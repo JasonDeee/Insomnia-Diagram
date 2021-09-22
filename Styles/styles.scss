@@ -760,7 +760,8 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 10vh;
+
+  color: #e9eef8;
 
   h2 {
     background: linear-gradient(to right, #e9eef8 50%, #ffffff);
@@ -772,19 +773,56 @@ nav {
     font-size: 2.2rem;
     font-weight: 900;
     text-align: center;
-    margin-bottom: 5vh;
   }
-  p {
-    color: white;
-    width: 38%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
+
   span {
     margin-bottom: 12px;
   }
+
+  .row {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .item {
+    width: 22vw;
+    height: 50vh;
+    background: #d6e1ec;
+
+    border-radius: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    gap: 2vw;
+
+    padding: 1.5vw;
+    p {
+      color: #01144e;
+      text-align: center;
+    }
+    .item_pic {
+      width: 70%;
+      flex: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .item_pic:nth-child(1) {
+      background-image: url(../Vectors/Brain.svg);
+    }
+    #Ipic2 {
+      background-image: url(../Vectors/Bed.svg);
+    }
+  }
 }
+
 #section5 {
   background: radial-gradient(circle at 100% 20%, #e9eef8 0%, #01144e 99%);
 

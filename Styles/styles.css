@@ -997,7 +997,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10vh;
+  color: #e9eef8;
 }
 
 #section4 h2 {
@@ -1009,13 +1009,35 @@ nav {
   font-size: 2.2rem;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 5vh;
 }
 
-#section4 p {
-  color: white;
-  width: 38%;
-  text-align: center;
+#section4 span {
+  margin-bottom: 12px;
+}
+
+#section4 .row {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2vw;
+}
+
+#section4 .item {
+  width: 22vw;
+  height: 50vh;
+  background: #d6e1ec;
+  border-radius: 1.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1023,10 +1045,38 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 2vw;
+  padding: 1.5vw;
 }
 
-#section4 span {
-  margin-bottom: 12px;
+#section4 .item p {
+  color: #01144e;
+  text-align: center;
+}
+
+#section4 .item .item_pic {
+  width: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#section4 .item .item_pic:nth-child(1) {
+  background-image: url(../Vectors/Brain.svg);
+}
+
+#section4 .item #Ipic2 {
+  background-image: url(../Vectors/Bed.svg);
 }
 
 #section5 {
